@@ -18,6 +18,10 @@
     
     <!-- Style sheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap style -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+  
 </head>
 
 <body>
@@ -65,7 +69,7 @@
             <div class="about-intro">
                 <img class="profile-img" src="./images/profile_pic.PNG" alt="profile picture">
                 <p> 
-                    I am a dedicated Software developer currently pursuing an postgraduate in Bioinformatics. Skilled in using Python
+                    I am a dedicated Software developer currently pursuing a postgraduate in Bioinformatics. Skilled in using Python
                     and also adept at adapting to evolving technologies and methods. A rapid learner, staying abreast of industry trends. 
                     A standout communicator and proven collaborator, consistently driving results through effective teamwork.
                 </p>
@@ -102,41 +106,69 @@
 
     <!-- Project section -->
 
+
+
+    <!-- <section id="projects">
+
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinderDog. Woof.</h2>
+              <img class="testimonial-img" src="images/dog-img.jpg" alt="dog-profile">
+              <em>Pebbles, New York</em>
+            </div>
+            <div class="carousel-item">
+              <h2 class="testimonial-text">My dog used to be so lonely, but with TinderDog's help, they've found the love of their life. I think.</h2>
+              <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+              <em>Beverly, Illinois</em>
+            </div>
+          </div>
+          <a class="carousel-control-prev" role="button" href="#testimonial-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section> -->
+
+
+
+
     <section id="projects" class="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project-list">
-                <div class="little-lemon" id="project-box">
-                    <img src="./images/quick-tip.png" alt="Project 1">
+            <div class="project-carousel">
+                <div class="project-slide active" id="little-lemon">
+                    <img src="./images/little-lemon.png" alt="little-lemon">
                     <div class="project-info">
                         <h3>Little Lemon</h3>
                         <p>
-                            A restaurant app <br>
-                            I specialize in crafting responsive frontend interfaces, leveraging HTML, CSS, JavaScript, and React.js 
-                            across diverse projects. During my coursework, I created a versatile Parser app in Python for processing 
-                            FASTA and UNIPROT files, adaptable for both command-line and GUI environments. Additionally, I engineered 
-                            a Monte Carlo simulation using R.
+                            During my specialization course with Meta as a Frontend Developer, I utilized a range of modern technologies, 
+                            notably <span>HTML, CSS, JavaScript,</span> and <span>ReactJS</span>. One of my key assignments involved crafting an application for a 
+                            family-owned restaurant in the Mediterranean region. This application included functionalities such as table 
+                            reservations and an interface for browsing through available dishes.
                         </p>
-                        <a href="https://github.com/DevAhmed-py/restaurant-tip" target="_blank">View Code</a>
+                        <a href="https://github.com/DevAhmed-py/little-lemon-reactApp" target="_blank">View Code</a>
                     </div>
                 </div>
 
-                <div class="fasta-parser" id="project-box">
-                    <img src="./images/quick-tip.png" alt="Project 2">
+                <div class="project-slide" id="uniprot-parser">
+                    <img src="./images/uniprot-parser.png" alt="uniprot-parser">
                     <div class="project-info">
-                        <h3>Fasta Parser</h3>
+                        <h3>UNIPROT Parser</h3>
                         <p>
-                            A Parser app <br>
-                            I specialize in crafting responsive frontend interfaces, leveraging HTML, CSS, JavaScript, and React.js 
-                            across diverse projects. During my coursework, I created a versatile Parser app in Python for processing 
-                            FASTA and UNIPROT files, adaptable for both command-line and GUI environments. Additionally, I engineered 
-                            a Monte Carlo simulation using R.
+                            A UniProt file, part of the Universal Protein Resource (UniProt) database, holds valuable biological sequence 
+                            data essential for bioinformatics research and analysis. In my project, I developed a Parser software using <span>Python</span>  
+                            and <span>RegExp</span> engineered to meticulously extract vital information such as GO, KEGG, and DOI numbers from each protein sequence within these files. 
+                            The software boasts adaptability for both command-line and GUI use, with <span>Tkinter</span> employed for the graphical interface. 
                         </p>
-                        <a href="https://github.com/DevAhmed-py/restaurant-tip" target="_blank">View Code</a>
+                        <a href="https://github.com/DevAhmed-py/uniprot_parser" target="_blank">View Code</a>
                     </div>
                 </div>
 
-                <div class="monte-carlo" id="project-box">
+                <div class="project-slide" id="monte-carlo">
                     <img src="./images/quick-tip.png" alt="Project 3">
                     <div class="project-info">
                         <h3>Monte Carlo Simulation</h3>
@@ -147,10 +179,12 @@
                             FASTA and UNIPROT files, adaptable for both command-line and GUI environments. Additionally, I engineered 
                             a Monte Carlo simulation using R.
                         </p>
-                        <a href="https://github.com/DevAhmed-py/restaurant-tip" target="_blank">View Code</a>
+                        <a href="https://github.com/DevAhmed-py/monte_carlo_simulation/" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
         </div>
     </section>
 
