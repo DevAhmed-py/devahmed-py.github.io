@@ -226,7 +226,7 @@ section.projects {
 
 .project-carousel {
     display: flex;
-    overflow-x: hidden;     /* Hide overflow to prevent horizontal scrolling */
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -291,7 +291,7 @@ section.projects {
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
     cursor: pointer;
     z-index: 1;
@@ -318,21 +318,12 @@ section.contact {
     font-family: 'Karla', sans-serif;
 }
 
-.contact h2 {
-    text-align: center;
-    padding: 30px 0 15px;
-    font-size: 1.4rem;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    color: var(--headingColor);
-}
-
 .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin: 10px 0;
+    padding: 10px 0 0;
 }
 
 .social-links a {
