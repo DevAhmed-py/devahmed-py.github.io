@@ -222,9 +222,8 @@ section.projects {
     color: var(--headingColor);
 }
 
-.projects p {
+.projects .sub_h2 {
     font-size: 1.5rem;
-    /* letter-spacing: 0.1rem; */
     color: var(--textColor);
     text-align: center;
     font-weight: 700;
