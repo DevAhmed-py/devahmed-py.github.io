@@ -80,7 +80,7 @@ section.intro {
 }
 
 .intro-content .name {
-    color: #008080;
+    color: rgb(128, 0, 0);
 }
 
 .intro-content h1 {
@@ -220,6 +220,15 @@ section.projects {
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     color: var(--headingColor);
+}
+
+.projects p {
+    font-size: 1.5rem;
+    /* letter-spacing: 0.1rem; */
+    color: var(--textColor);
+    text-align: center;
+    font-weight: 700;
+    padding: 0 0 15px ;
 }
 
 /* Carousel */
@@ -375,5 +384,20 @@ section.contact {
 
     .intro-content span:not(:last-child)::after {
         content: none
+    }
+
+    section.about {
+        height: auto;
+        padding: 0 15px 15px;
+    }
+
+    section.projects {
+        height: auto;
+    }
+
+    
+
+    ul.social-links {
+        gap: 10px;
     }
 }
